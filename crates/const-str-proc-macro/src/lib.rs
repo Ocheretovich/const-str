@@ -27,9 +27,6 @@ use syn::parse::Parse;
 use syn::spanned::Spanned;
 use syn::{parse_macro_input, LitStr};
 
-#[cfg(feature = "http")]
-use http::header::HeaderName;
-
 #[allow(dead_code)]
 fn direct_convert<T, E, F>(input: TokenStream, f: F) -> TokenStream
 where
